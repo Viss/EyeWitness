@@ -1,9 +1,12 @@
 import cgi
 import os
 import re
+import sys
+
 
 from helpers import strip_nonalphanum
-
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class HTTPTableObject(object):
 
